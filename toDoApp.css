@@ -1,0 +1,266 @@
+* {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+
+.buttonDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.delButton {
+    /* background-color: black; */
+    background-color:white;
+    color: black;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    size: 0rem;
+}
+
+.editButton {
+    /* background-color: black; */
+    background-color:white;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    flex-wrap: wrap;
+    /* cursor: pointer; */
+}
+
+.ok,
+.delete {
+    /* background-color: gray; */
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 2px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: ease-in;
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.inputArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* .both{ */
+/* border: 5px solid silver ; */
+/* background-color:black; */
+/* } */
+h1 {
+    font-size: xx-large;
+}
+
+.heading {
+    color:gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    /* background-color: black; */
+    /* color: white; */
+    /* border: 5px solid silver; */
+}
+
+.ok:hover {
+    background-color: green;
+    color: white;
+}
+
+.delete:hover {
+    background-color: darkred;
+    color: white;
+}
+
+#word {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.paragraph {
+    /* background-color: black; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    /* padding-top: -10px; */
+    /* border: 5px solid gray; */
+}
+
+.ulDiv {
+    background-image: linear-gradient(to right, grey, white);
+}
+
+.editButton:hover {
+    background-color: orange;
+    color: black;
+}
+
+.delButton:hover {
+    background-color: red;
+}
+
+.hide {
+    /* position:relative; */
+    /* right: 0; */
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.hide:hover {
+    color: aqua;
+}
+
+#word {
+        margin-top: -10px;
+        color: yellow;
+}
+
+.total {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+        border: 2px solid orange;
+        width: 100vw;
+        height: 5vh;
+        flex-wrap: wrap;
+        /* text-wrap: wrap; */
+        /* overflow: scroll; */
+        /* height: 30vh; */
+}
+
+
+@media (max-width:768px) {
+
+    input {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 25%;
+        border: 2px solid black;
+        border-radius: 6px;
+        font-size: 1em;
+    }
+
+    .ok,
+    .delete {
+        font-size: 1.2em;
+        margin: 3px;
+        padding: 1px;
+    }
+
+    .delButton,
+    .editButton {
+        font-size: 1em;
+    }
+
+    li {
+        margin: 2px;
+        padding: 2px;
+    }
+
+    
+}
+
+@media (max-width:480px) {
+    h1 {
+        font-size: x-large;
+    }
+
+    input {
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 25%;
+        border: 2px solid black;
+        border-radius: 4px;
+        font-size: 0.8em;
+    }
+
+    .ok,
+    .delete {
+        font-size: 1.1em;
+        margin: 2px;
+        padding: 0.5px;
+    }
+
+    .delButton,
+    .editButton {
+        font-size: 1em;
+    }
+
+    li {
+        margin: 1px;
+        padding: 1px;
+    }
+
+}
+table{
+        width: 100%;
+        color: white;
+        overflow: hidden;
+        
+}

@@ -1,0 +1,110 @@
+body{
+    background-image:linear-gradient(to right,black,wheat);
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: */
+}
+.the-main{
+display: flex;
+justify-content: center;
+align-items:center;
+flex-wrap: wrap;
+margin-top:5em;
+}
+.main{
+    box-shadow: 10px 10px 10px rgb(3, 20, 10);
+    font-size:large;
+    /* padding: auto; */
+    border-radius: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color:black;
+    color: white;
+    flex-wrap: wrap;
+    white-space:normal;
+    /* overflow:scroll;     */
+}
+input{
+    font-size:0.7em;
+    width:18vw;
+    height: 4vh;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+button
+{   
+    font-size: large;
+    width: 100%;
+    background-color:rgb(5,30,20);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+h1{
+    font-weight: bold;
+    font-size: xx-large ;
+    color:silver;
+    text-transform:uppercase;
+}
+a{
+    text-decoration: none;
+    color:lightblue;
+}
+.checkbox{
+    width: 2vw;
+    height: 2vh;
+    cursor: pointer;
+}
+span{
+    font-size: small;
+}
+#errorMessage,#invalidId{
+    color:red;
+    font-size: small;
+}
+.checkDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.forgetPara{
+    font-size:  medium;
+}
+
+@media (max-width:400px) {
+    .the-main{
+        margin-top: 3em;
+    }    
+     .main{
+        border-radius: 6px;
+        width: 80%;
+        /* height: 100%; */
+     }
+     input{
+        height: 2vh;
+        width: 30vw;
+        border-radius: 5px;
+     }   
+     button{
+        font-size: medium;
+        width: 80%;
+        border-radius: 5px;   
+     }
+     h1{
+        font-size: larger;
+     }
+     .forgetPara{
+        font-size: smaller;
+     }
+
+     
+    
+    }
+.the-main:hover {
+    transform: scale(1.1);
+}

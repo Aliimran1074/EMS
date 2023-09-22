@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management System</title>
+    <link rel="stylesheet" href="toDoApp.css">
+</head> 
+
+<body class="main">
+    <div class="heading">
+        <h1>Expense Management System</h1>
+    </div>
+    <div class="both">
+    <div class="inputArea">
+        <input type="text" name="abc" id="inp" placeholder="Expense Nature">
+        <input type="number" name="abc" id="inp1" placeholder="Expense Value">
+        <input type="number" name="abc" id="inp2" placeholder="Total budget">
+    </div>
+        <div class="buttons"> 
+    <button class="ok" onclick="AddTable()">Ok</button>
+    <button class="delete" onclick="DeleteAll()">Delete All</button>
+    </div>
+</div>
+<div class="paragraph">
+    <p id=welcomePara style="color: silver; font-size:xx-large;" >Welcome</p>
+    <p id="word" ></p>
+</div>
+<div>
+    <marquee behavior="" direction="left" id="marquee" width="100%" style=" color: red;; font-size: large; font-family:'Times New Roman', Times, serif;" ></marquee>
+</div>
+   
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Accessories</th>
+                <th>Expense</th>
+                <th>Edit/Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    
+    <div class="total"><p>Budget :<span id="budgetCount">0</span></p>
+    <p>Total :<span id="totalCount">0</span></p></div>
+
+
+
+
+    <script src="toDoApp.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- Bootstrap -->
+<!-- body -> class-> container :give margin from left and right side -->
+<!-- input -> class ->form-control : make a big and suitable field -->
+<!-- buttom ->class -> btn btn-succersor : make button attractive and green -->
+<!-- class : m-3 : to give margin -->
+<!-- ul -> class -> text-center : to make text in center -->
